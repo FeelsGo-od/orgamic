@@ -51,6 +51,33 @@ $('.slider-block').slick({
   arrows: true,
   prevArrow: $('.prev'),
   nextArrow: $('.next'),
+  // variableWidth: true,
+  responsive: [
+    // {
+    //   breakpoint: 936,
+    //   settings: {
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1
+    //   }
+    // }
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 $('.slider-block2').slick({
   infinite: true,
